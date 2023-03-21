@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.main{
+    background-color: rgb(221, 240, 247);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap:50px; */
+}
+.main .left h1{
+   color: rgb(201, 92, 152);
+   display: flex;
+   justify-content: center;
+}
+ .main .right a{
+    text-decoration: none;
+    color:rgb(201, 93, 156);
+    padding: 30px;
+    font-size: 25px;
+} 
+.burger {
+    display: none;
+}
+@media(max-width:1200px){
+    .main .burger {
+        display:block;
+        cursor: pointer;
+       
+    }
+    .main .left h1{
+        font-size: 30px;
+    }
+    .main .burger div{
+        background-color: white;
+        margin-bottom: 10px;
+        width:50px;
+        height:4px;
+    }
+    /* .main .right{
+        display: none;
+    } */
+     .right{
+        position: absolute;
+        z-index: 9999999;  
+        right:0;
+        top:10vh;
+        width:100%;
+        height:80vh; 
+        background-color: #706e6b;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: all o.5s ease-in;
+    }
+    .nav-active{
+        transform:translateX(0);
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2{
+        opacity:0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+
+}
+
+/* section2 */
+
+
+.bill{
+    /* background-image: url("img.jpg");
+    background-size: cover;
+    background-repeat:no-repeat; */
+    background-color:rgb(233, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    padding:80px 0px; 
+}
+.field{
+    width: 40%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin: 0 auto;
+}
+
+input{
+
+    width:60%;
+    height:auto;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: aquamarine;
+
+}
+
+ h1{
+    font-size: 40px;
+}
+
+#payment{
+    width: 25%;
+    font-size: 20px;
+    color: whitesmoke;
+    border-color: aqua;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color:rgb(128, 152, 228);
+}
+
+.bill h1{
+    color:brown;
+}
+
+
+p{
+    color: brown;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
