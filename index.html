@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+
+
+        <div class="left">
+            <h1>BAWARCHI RESTAURANT</h1>
+        </div>
+        <div class="right">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+
+    <!-- section2 -->
+
+    <div class="bill" id="services">
+
+        <h1>Person Details</h1>
+
+        <div class="field">
+            <h1>Name</h1>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+
+        <div class="field">
+            <h1>phone</h1>
+            <input type="phone" id="mobile" placeholder="Enter phone No">
+        </div>
+
+        <div class="field">
+            <h1>Email</h1>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+
+        <div class="field">
+            <h1>Place</h1>
+            <input type="address" id="address" placeholder="Enter address">
+        </div>
+
+        <h1>Menu Items</h1>
+
+        <div class="field">
+            <h1>Starters</h1>
+            <input type="text" id="starters" placeholder="Enter the Quantity">
+        </div>
+
+        <div class="field">
+            <h1>Chicken</h1>
+            <input type="text" id="main_course" placeholder="Enter the Quantity">
+        </div>
+
+        <div class="field">
+            <h1>Burgers</h1>
+            <input type="text" id="indian_food" placeholder="Enter the Quantity">
+        </div>
+
+        <div class="field">
+            <h1>Chinese</h1>
+            <input type="text" id="chinese" placeholder="Enter the Quantity">
+        </div>
+
+        <div class="field">
+            <h1>Biryani</h1>
+            <input type="text" id="dessert" placeholder="Enter the Quantity">
+        </div>
+
+        <div class="field">
+            <h1>GST(%)</h1>
+            <input type="text" id="GST" placeholder="Enter the GST(%)">
+        </div>
+
+
+        <button id="payment" onclick="calculate()">Submit</button>
+
+        <p>Total_bill</p>
+        <input type="text" id="Total_bill" placeholder="total">
+
+        <div class="field">
+            <h1>TIP</h1>
+            <input type="text" id="TIP" placeholder="Enter the TIP">
+        </div>
+       
+            
+            <p>Your_bill</p>
+            <input type="text" id="your_bill" placeholder="your_bill">
+
+            
+
+        
+
+    </div>
+
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
